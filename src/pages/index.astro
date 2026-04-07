@@ -3,6 +3,8 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import { Image } from 'astro:assets';
+import myImage from '../assets/fun88-banner.webp';
 ---
 
 <!DOCTYPE html>
@@ -147,10 +149,6 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 
 <section class="section"> 
 
----
-import { Image } from 'astro:assets';
-import myImage from '../assets/fun88-banner.webp'; // 引入圖片
----
 <Image src={myImage} alt="FUN88 คาสิโนออนไลน์ โบนัส 100%" class="my-custom-img"/>
 
   <h2>FUN88 คืออะไร</h2>
