@@ -24,7 +24,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
   <link rel="alternate" href="https://fun888th.agitatorth.workers.dev/" hreflang="th" />
 
   <!-- Favicon -->
-  <link rel="icon" href="resource/images/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="https://fun888th.agitatorth.workers.dev/favicon.ico" type="image/x-icon" />
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
@@ -32,13 +32,13 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
   <meta property="og:description" content="สมัคร FUN88 วันนี้ รับโบนัสทันที เล่นคาสิโนสด สล็อต และกีฬา" />
   <meta property="og:url" content="https://fun888th.agitatorth.workers.dev/" />
   <meta property="og:site_name" content="FUN88" />
-  <meta property="og:image" content="https://fun888th.agitatorth.workers.dev/cover.jpg" />
+  <meta property="og:image" content="https://fun888th.agitatorth.workers.dev/fun88-banner.webp" />
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="FUN88 คาสิโนออนไลน์" />
   <meta name="twitter:description" content="โบนัสสูงสุด 100% สมัครเลย!" />
-  <meta name="twitter:image" content="https://fun888th.agitatorth.workers.dev/cover.jpg" />
+  <meta name="twitter:image" content="https://fun888th.agitatorth.workers.dev/fun88-banner.webp" />
 
  
   <!-- Schema  -->
@@ -125,6 +125,10 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
       background: #020617;
       color: #aaa;
     }
+	.my-custom-img{
+		width: 100%;
+		height: auto;
+	}
   </style>
 </head>
 
@@ -141,11 +145,13 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
   <a href="#" class="cta-btn">สมัครรับโบนัส 100%</a>
 </section>
 
-<section class="section">
- 
+<section class="section"> 
 
-     <img src="resource/images/fun88-banner.webp" alt="FUN88 คาสิโนออนไลน์ โบนัส 100%" style="width:100%;height:auto;object-fit:cover;">
-
+---
+import { Image } from 'astro:assets';
+import myImage from '../assets/fun88-banner.webp'; // 引入圖片
+---
+<Image src={myImage} alt="FUN88 คาสิโนออนไลน์ โบนัส 100%" class="my-custom-img"/>
 
   <h2>FUN88 คืออะไร</h2>
   <p>
